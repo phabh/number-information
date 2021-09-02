@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformation.API", "NumberInformation.API\NumberInformation.API.csproj", "{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB6E83B6-BC38-457E-8506-9AB9EB7EE860}
+	EndGlobalSection
+EndGlobal
