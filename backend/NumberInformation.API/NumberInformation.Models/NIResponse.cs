@@ -9,12 +9,12 @@ namespace NumberInformation.Models
     {
 
         [JsonPropertyName("input")]
-        public int Input { get; set; }
+        public long Input { get; set; }
 
         [JsonPropertyName("dividing_numbers")]
-        public IEnumerable<int> DividingNumbers { get; set; }
+        public IEnumerable<long> DividingNumbers { get; set; }
 
         [JsonPropertyName("dividing_prime")]
-        public IEnumerable<int> DividingPrime { get; set; }
+        public IEnumerable<long> DividingPrime { get; set; }
     }
 }

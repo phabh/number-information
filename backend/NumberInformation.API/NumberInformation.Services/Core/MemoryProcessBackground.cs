@@ -28,9 +28,11 @@ namespace NumberInformation.Services.Core
             {
                 var insideTaskId = taskId.ToString();
 
+                var result = backgroundMethod();
+
                 lock (_lock)
                 {
-                    _memoryStorage.Add(insideTaskId, backgroundMethod());
+                    _memoryStorage.Add(insideTaskId, result);
                 }
 
             });

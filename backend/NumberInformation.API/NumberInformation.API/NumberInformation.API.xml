@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NumberInformation.API</name>
+    </assembly>
+    <members>
+        <member name="M:NumberInformation.API.Controllers.NumberInformationController.Get(System.Int64)">
+            <summary>
+            Send number equal or greater than 1 to get information
+            </summary>
+            <param name="inputNumber">long number</param>
+            <returns>A task id or Information of numbers</returns>
+            <response code="200">A object with number informations</response>
+            <response code="202">A taskId to consulting after</response>
+            <response code="400">Number is less than 1 or greater than max of long size</response>
+            <response code="500">Other errors</response>
+        </member>
+        <member name="M:NumberInformation.API.Controllers.NumberInformationController.Get(System.String)">
+            <summary>
+            Get number information
+            </summary>
+            <param name="taskId">ID of task</param>
+            <returns>None or Information of Numbers</returns>
+            <response code="200">Information of numbers</response>
+            <response code="204">The information of number is processing</response>
+        </member>
+    </members>
+</doc>

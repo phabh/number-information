@@ -8,13 +8,13 @@ namespace NumberInformation.Services.Core
 {
     public class DividingNumberService
     {
-        public IEnumerable<int> GetDividingNumbers(int inputNumber)
+        public IEnumerable<long> GetDividingNumbers(long inputNumber)
         {
-            var dividingNumbers = new List<int>();
+            var dividingNumbers = new List<long>();
             var tempNumber = inputNumber;
 
             dividingNumbers.Add(1);
-            var dividing = 2;
+            var dividing = 2L;
             while ( Math.Abs(tempNumber) > dividing)
             {
                 if( tempNumber % dividing == 0)

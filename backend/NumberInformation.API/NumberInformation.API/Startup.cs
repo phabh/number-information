@@ -7,9 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NumberInformation.Models;
+using NumberInformation.Services.Core;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace NumberInformation.API
@@ -27,11 +31,21 @@ namespace NumberInformation.API
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSingleton<IProcessBackground<NIResponse>, MemoryProcessBackground<NIResponse>>();
+
+            services.AddCors();
             services.AddControllers();
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(opt =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "NumberInformation.API", Version = "v1" });
+                opt.SwaggerDoc("v1", new OpenApiInfo { Title = "NumberInformation.API", Version = "v1" });
+
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                opt.IncludeXmlComments(xmlPath);
             });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,7 +59,7 @@ namespace NumberInformation.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseRouting();
 
             app.UseAuthorization();

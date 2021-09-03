@@ -8,12 +8,12 @@ namespace NumberInformation.Services.Core
 {
     public class PrimeService
     {
-        public bool IsPrime(int number)
+        public bool IsPrime(long number)
         {
-            var dividing = 2;
+            var dividing = 2L;
             while(Math.Abs(number) > dividing)
             {
-                if (number % dividing == 0) return false;
+                if (number % dividing == 0L) return false;
                 dividing++;
             }
             return true;
