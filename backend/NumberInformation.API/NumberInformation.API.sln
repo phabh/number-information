@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformation.API", "NumberInformation.API\NumberInformation.API.csproj", "{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberInformation.API", "NumberInformation.API\NumberInformation.API.csproj", "{7AAB867D-0450-4E36-9A3E-20BBE3F6C0DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformation.Models", "NumberInformation.Models\NumberInformation.Models.csproj", "{65304370-4045-4B5C-9921-9B5BAA361F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberInformation.Models", "NumberInformation.Models\NumberInformation.Models.csproj", "{65304370-4045-4B5C-9921-9B5BAA361F0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformation.Services", "NumberInformation.Services\NumberInformation.Services.csproj", "{E472E21C-707C-4485-BD8D-639BD92AF348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberInformation.Services", "NumberInformation.Services\NumberInformation.Services.csproj", "{E472E21C-707C-4485-BD8D-639BD92AF348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformation.Tests", "NumberInformation.Tests\NumberInformation.Tests.csproj", "{CA977A79-29D9-4FFF-B757-E43DFE631D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberInformation.Tests", "NumberInformation.Tests\NumberInformation.Tests.csproj", "{CA977A79-29D9-4FFF-B757-E43DFE631D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberInformationClient", "NumberInformationClient\NumberInformationClient.csproj", "{8ABD580A-CC89-4512-A07E-10F0119C9CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CA977A79-29D9-4FFF-B757-E43DFE631D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA977A79-29D9-4FFF-B757-E43DFE631D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA977A79-29D9-4FFF-B757-E43DFE631D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABD580A-CC89-4512-A07E-10F0119C9CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABD580A-CC89-4512-A07E-10F0119C9CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABD580A-CC89-4512-A07E-10F0119C9CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABD580A-CC89-4512-A07E-10F0119C9CD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

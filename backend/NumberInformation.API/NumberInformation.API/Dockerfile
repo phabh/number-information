@@ -8,6 +8,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["NumberInformation.API/NumberInformation.API.csproj", "NumberInformation.API/"]
+COPY ["NumberInformation.API/NumberInformation.Models.csproj", "NumberInformation.Models/"]
+COPY ["NumberInformation.API/NumberInformation.Services.csproj", "NumberInformation.Services/"]
+
 RUN dotnet restore "NumberInformation.API/NumberInformation.API.csproj"
 COPY . .
 WORKDIR "/src/NumberInformation.API"
